@@ -25,7 +25,7 @@
     --red: #ee5454;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-light.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-light.svg)
-
+   
 }
 
 body.escuro {
@@ -37,7 +37,7 @@ body.escuro {
     --button-bg: #3b4d66;
     --shadow: 0px 16px 40px 0px rgba(49, 62, 81, 0.14);
     --color-span: #313e51;
-
+    
 }
 
 body {
@@ -60,12 +60,12 @@ header {
 }
 
 .assunto_icone{
+   
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
-
 
 .assunto_icone.html{
     background: var(--bg-html);
@@ -82,7 +82,6 @@ header {
 .assunto_icone.acessibilidade{
     background: var(--bg-acessibilidade);
 }
-
 
 .assunto_icone img {
     width: 100%;
@@ -162,6 +161,7 @@ main {
     border-radius: 999px;
 }
 
+
 .alternativas form {
     display: flex;
     flex-direction: column;
@@ -180,7 +180,6 @@ main {
     box-shadow: var(--shadow);
     color: var(--primary-text-color);
     cursor: pointer;
-
 }
 
 .alternativas label:hover {
@@ -191,7 +190,6 @@ main {
 }
 
 .alternativas label:has(input:checked){
-    
     outline: 3px solid var(--purple);
 
     & span {
@@ -199,6 +197,7 @@ main {
         color: var(--white)
     }
 }
+
 .alternativas label#correta{
     outline: 3px solid var(--green);
 
@@ -219,6 +218,7 @@ main {
 
 
 
+
 .alternativas input {
     display: none;
 }
@@ -227,7 +227,7 @@ main {
     display: flex;
     align-items: center;
     gap: 16px;
-
+    
 }
 
 .alternativas div span {
@@ -255,7 +255,6 @@ main {
     transition: background 0.3s;
 }
 
-
 .alternativas button:hover {
     background: var(--purple-hover);
     cursor: pointer;
@@ -264,13 +263,18 @@ main {
 
 
 
-@media(min-width: 1100px){
 
+
+
+
+
+@media(min-width: 1100px){
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
+
     header {
         margin-block: 81px;
         max-width: 1160px;
@@ -287,6 +291,7 @@ main {
         font-size: 28px;
 
     }
+
     .tema {
         gap: 16px
     }
@@ -305,18 +310,17 @@ main {
         height: 20px;
     }
 
-    
     main {
         max-width: 1160px;
         margin-inline: auto;
         display: flex;
         gap: 130px
     }
-
+    
 
     section {
         width: 100%;
-
+        
     }
 
     .pergunta {
@@ -361,5 +365,8 @@ main {
     .alternativas button {
         font-size: 22px;
     }
+
+
+
 
 }

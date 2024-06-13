@@ -5,8 +5,8 @@ export function trocarTema( body, botaoTema){
     if (localStorage.getItem("tema")){
         tema = localStorage.getItem("tema")
     }
-
-
+    
+    
 
     if (tema == "claro"){
         body.classList.add("escuro")
